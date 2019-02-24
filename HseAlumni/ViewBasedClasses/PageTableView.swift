@@ -1,5 +1,5 @@
 //
-//  DynamicTableView.swift
+//  PageTableView.swift
 //  HseAlum
 //
 //  Created by Sergey on 10/10/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol DynamicTableViewDelegate : class{
+protocol PageTableViewDelegate : class{
     func shouldScrollTableView(at index: Int)
 }
 
@@ -18,14 +18,14 @@ enum PageState{
     case Scrolling
 }
 
-class DynamicTableView: UITableView {
-    weak var pageDelegate : DynamicTableViewDelegate?
+class PageTableView: UITableView {
+    weak var pageDelegate : PageTableViewDelegate?
     var pageIndex : Int!
     private var state : PageState = .Free
     var origin : CGFloat = 0.0
     var topAnchorPoint : CGFloat = 0.0
     var anchorPoint : CGFloat = 0.0
-    var customHeaderView: TableViewHeaderView?
+    var customHeaderView: PageTableViewHeaderView?
     var container: UIView!{
         didSet{
             container.layer.shadowColor = UIColor.lightGray.cgColor

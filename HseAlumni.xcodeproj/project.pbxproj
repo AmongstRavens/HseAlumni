@@ -11,13 +11,12 @@
 		972B9F752212C4FB0042EE66 /* DropdownTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972B9F712212C4FB0042EE66 /* DropdownTableViewCell.xib */; };
 		972B9F762212C4FB0042EE66 /* AddItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972B9F722212C4FB0042EE66 /* AddItemTableViewCell.xib */; };
 		972B9F772212C4FB0042EE66 /* SwitchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972B9F732212C4FB0042EE66 /* SwitchTableViewCell.xib */; };
-		972B9F7C2212C5180042EE66 /* TableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972B9F7A2212C5180042EE66 /* TableViewHeaderView.xib */; };
+		972B9F7C2212C5180042EE66 /* PageTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 972B9F7A2212C5180042EE66 /* PageTableViewHeaderView.xib */; };
 		972B9F822212C56E0042EE66 /* VacancyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B9F7F2212C56D0042EE66 /* VacancyTableViewCell.swift */; };
-		972B9F832212C56E0042EE66 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B9F802212C56D0042EE66 /* CustomCell.swift */; };
-		972B9F842212C56E0042EE66 /* DynamicTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B9F812212C56E0042EE66 /* DynamicTableView.swift */; };
+		972B9F842212C56E0042EE66 /* PageTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B9F812212C56E0042EE66 /* PageTableView.swift */; };
 		972B9F882212C5990042EE66 /* accountTableViewCellsDescription.plist in Resources */ = {isa = PBXBuildFile; fileRef = 972B9F862212C5990042EE66 /* accountTableViewCellsDescription.plist */; };
 		972B9F892212C5990042EE66 /* settingsCells.plist in Resources */ = {isa = PBXBuildFile; fileRef = 972B9F872212C5990042EE66 /* settingsCells.plist */; };
-		972B9F8B2212C7650042EE66 /* TableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B9F8A2212C7650042EE66 /* TableViewHeaderView.swift */; };
+		972B9F8B2212C7650042EE66 /* PageTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972B9F8A2212C7650042EE66 /* PageTableViewHeaderView.swift */; };
 		972D89472211B0A90036D1E6 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 972D893D2211B0A80036D1E6 /* Lato-Italic.ttf */; };
 		972D89482211B0A90036D1E6 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 972D893E2211B0A80036D1E6 /* Lato-Black.ttf */; };
 		972D89492211B0A90036D1E6 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 972D893F2211B0A80036D1E6 /* Lato-BoldItalic.ttf */; };
@@ -61,13 +60,12 @@
 		972B9F712212C4FB0042EE66 /* DropdownTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropdownTableViewCell.xib; sourceTree = "<group>"; };
 		972B9F722212C4FB0042EE66 /* AddItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddItemTableViewCell.xib; sourceTree = "<group>"; };
 		972B9F732212C4FB0042EE66 /* SwitchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchTableViewCell.xib; sourceTree = "<group>"; };
-		972B9F7A2212C5180042EE66 /* TableViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewHeaderView.xib; sourceTree = "<group>"; };
+		972B9F7A2212C5180042EE66 /* PageTableViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PageTableViewHeaderView.xib; sourceTree = "<group>"; };
 		972B9F7F2212C56D0042EE66 /* VacancyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VacancyTableViewCell.swift; sourceTree = "<group>"; };
-		972B9F802212C56D0042EE66 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		972B9F812212C56E0042EE66 /* DynamicTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTableView.swift; sourceTree = "<group>"; };
+		972B9F812212C56E0042EE66 /* PageTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTableView.swift; sourceTree = "<group>"; };
 		972B9F862212C5990042EE66 /* accountTableViewCellsDescription.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = accountTableViewCellsDescription.plist; sourceTree = "<group>"; };
 		972B9F872212C5990042EE66 /* settingsCells.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingsCells.plist; sourceTree = "<group>"; };
-		972B9F8A2212C7650042EE66 /* TableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeaderView.swift; sourceTree = "<group>"; };
+		972B9F8A2212C7650042EE66 /* PageTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTableViewHeaderView.swift; sourceTree = "<group>"; };
 		972D893D2211B0A80036D1E6 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
 		972D893E2211B0A80036D1E6 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		972D893F2211B0A80036D1E6 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -155,8 +153,8 @@
 		972B9F7D2212C51F0042EE66 /* TableViewHeader */ = {
 			isa = PBXGroup;
 			children = (
-				972B9F8A2212C7650042EE66 /* TableViewHeaderView.swift */,
-				972B9F7A2212C5180042EE66 /* TableViewHeaderView.xib */,
+				972B9F8A2212C7650042EE66 /* PageTableViewHeaderView.swift */,
+				972B9F7A2212C5180042EE66 /* PageTableViewHeaderView.xib */,
 			);
 			path = TableViewHeader;
 			sourceTree = "<group>";
@@ -164,8 +162,7 @@
 		972B9F7E2212C55F0042EE66 /* ViewBasedClasses */ = {
 			isa = PBXGroup;
 			children = (
-				972B9F802212C56D0042EE66 /* CustomCell.swift */,
-				972B9F812212C56E0042EE66 /* DynamicTableView.swift */,
+				972B9F812212C56E0042EE66 /* PageTableView.swift */,
 				972D89562211B1790036D1E6 /* PagesScrollView.swift */,
 			);
 			path = ViewBasedClasses;
@@ -395,7 +392,7 @@
 				972B9F752212C4FB0042EE66 /* DropdownTableViewCell.xib in Resources */,
 				97AA6D3822206AC5002E77D0 /* VacancyTableViewCell.xib in Resources */,
 				97B1C8A62211AD52004D1C1A /* LaunchScreen.storyboard in Resources */,
-				972B9F7C2212C5180042EE66 /* TableViewHeaderView.xib in Resources */,
+				972B9F7C2212C5180042EE66 /* PageTableViewHeaderView.xib in Resources */,
 				97B1C8A32211AD52004D1C1A /* Assets.xcassets in Resources */,
 				972B9F892212C5990042EE66 /* settingsCells.plist in Resources */,
 				9783C6742212F57B00D12257 /* Events.storyboard in Resources */,
@@ -431,10 +428,9 @@
 				97E5E365221D986900F9DD76 /* PagesScrollView.swift in Sources */,
 				97AA6D25222050FA002E77D0 /* VacancyViewModel.swift in Sources */,
 				97AA6D3A22206CBC002E77D0 /* VacanciesTableViewController.swift in Sources */,
-				972B9F8B2212C7650042EE66 /* TableViewHeaderView.swift in Sources */,
+				972B9F8B2212C7650042EE66 /* PageTableViewHeaderView.swift in Sources */,
 				97AA6D2C22205CF1002E77D0 /* SwitchTableViewCell.swift in Sources */,
-				972B9F832212C56E0042EE66 /* CustomCell.swift in Sources */,
-				972B9F842212C56E0042EE66 /* DynamicTableView.swift in Sources */,
+				972B9F842212C56E0042EE66 /* PageTableView.swift in Sources */,
 				972D89532211B0CA0036D1E6 /* DesignExtensions.swift in Sources */,
 				97AA6D3522205D48002E77D0 /* ReuseIdentifiersProtocol.swift in Sources */,
 				972D896A2211CA0A0036D1E6 /* RegistrationViewController.swift in Sources */,

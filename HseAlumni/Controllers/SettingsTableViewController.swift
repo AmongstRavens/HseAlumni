@@ -46,7 +46,7 @@ class SettingsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = Bundle.main.loadNibNamed(TableViewHeaderView.defaultReuseIdentifier, owner: self, options: nil)?.first as! TableViewHeaderView
+        let headerView = Bundle.main.loadNibNamed(PageTableViewHeaderView.defaultReuseIdentifier, owner: self, options: nil)?.first as! PageTableViewHeaderView
         headerView.headerLabel.text = "Header Label Text"
         return headerView
     }

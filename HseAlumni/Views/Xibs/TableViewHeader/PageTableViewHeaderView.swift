@@ -1,5 +1,5 @@
 //
-//  TableViewHeaderView.swift
+//  PageTableViewHeaderView.swift
 //  HseAlumni
 //
 //  Created by Sergey on 2/12/19.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class TableViewHeaderView: UIView, ReusableView, NibLoadableView{
+class PageTableViewHeaderView: UIView, ReusableView, NibLoadableView{
     
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var addButton: UIButton!
-    var parent : DynamicTableView?
+    var parent : PageTableView?
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)

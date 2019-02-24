@@ -35,7 +35,7 @@ class PagesScrollView : UIScrollView{
     
     private var descriptorResourceName : String!
     private var customCellsViewModel = CustomCellViewModel()
-    private var tableViews = [DynamicTableView]()
+    private var tableViews = [PageTableView]()
     private var scrollingTableViewIndex : Int = 0
     private var shouldScrollTableView : Bool = false
     
@@ -67,7 +67,7 @@ class PagesScrollView : UIScrollView{
         for index in 0 ..< count{
             let frame = CGRect.zero
             let container = UIView(frame: frame)
-            let tableView = DynamicTableView(frame: frame, style: .plain)
+            let tableView = PageTableView(frame: frame, style: .plain)
             tableView.pageIndex = index
             tableView.container = container
             tableView.registerCells()
@@ -148,14 +148,14 @@ extension PagesScrollView : UITableViewDelegate, UITableViewDataSource, UIScroll
     
     //MARK: TableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let index = tableViews.index(of: tableView as! DynamicTableView)!
+        let index = tableViews.index(of: tableView as! PageTableView)!
         let cellDescriptor = customCellsViewModel.getCellDescriptior(for: indexPath, index: index)
         let cell = tableView.dequeueReusableCell(withIdentifier: cellDescriptor["cellIdentifier"] as! String, for: indexPath)
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let index = tableViews.index(of: tableView as! DynamicTableView){
+        if let index = tableViews.index(of: tableView as! PageTableView){
             return customCellsViewModel.numberOfRows(for: index)
         } else{
             return 0
@@ -163,7 +163,7 @@ extension PagesScrollView : UITableViewDelegate, UITableViewDataSource, UIScroll
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let index = tableViews.index(of: tableView as! DynamicTableView){
+        if let index = tableViews.index(of: tableView as! PageTableView){
             let cellType = customCellsViewModel.handleTappingRow(at: indexPath, for: index)
             if cellType == DropdownTableViewCell.defaultReuseIdentifier{
                 let cell = tableView.cellForRow(at: indexPath) as! DropdownTableViewCell
@@ -174,10 +174,10 @@ extension PagesScrollView : UITableViewDelegate, UITableViewDataSource, UIScroll
     
     //MARK: TableView header
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = Bundle.main.loadNibNamed(TableViewHeaderView.defaultReuseIdentifier, owner: self, options: nil)?.first as! TableViewHeaderView
+        let headerView = Bundle.main.loadNibNamed(PageTableViewHeaderView.defaultReuseIdentifier, owner: self, options: nil)?.first as! PageTableViewHeaderView
         headerView.headerLabel.text = "Header Label Text"
-        headerView.parent = tableView as? DynamicTableView
-        (tableView as? DynamicTableView)?.customHeaderView = headerView
+        headerView.parent = tableView as? PageTableView
+        (tableView as? PageTableView)?.customHeaderView = headerView
         return headerView
     }
     
@@ -212,7 +212,7 @@ extension PagesScrollView : UITableViewDelegate, UITableViewDataSource, UIScroll
 }
 
 //MARK:- PageScrollingDelegate
-extension PagesScrollView : DynamicTableViewDelegate{
+extension PagesScrollView : PageTableViewDelegate{
     func shouldScrollTableView(at index: Int) {
         scrollingTableViewIndex = index
         shouldScrollTableView = true
