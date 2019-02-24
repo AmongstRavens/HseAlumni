@@ -55,7 +55,6 @@ extension UITableView {
     
     func register<T: UITableViewCell>(_: T.Type) where T: ReusableView, T: NibLoadableView {
         let bundle = Bundle(for: T.self)
-        print(T.defaultReuseIdentifier)
         let nib = UINib(nibName: T.nibName, bundle: bundle)
         register(nib, forCellReuseIdentifier: T.defaultReuseIdentifier)
     }

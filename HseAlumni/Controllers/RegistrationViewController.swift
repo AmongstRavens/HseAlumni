@@ -11,7 +11,6 @@ import UIKit
 class RegistrationViewController: UIViewController {
     var registrationViewModel = RegistrationViewModel()
     
-    
     @IBOutlet weak var serialNumberLabel: UILabel!
     @IBOutlet weak var diplomaNumberTextFiled: UITextField!
     

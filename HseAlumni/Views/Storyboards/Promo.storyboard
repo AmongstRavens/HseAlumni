@@ -6,26 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="MDt-jJ-pVw">
-            <objects>
-                <viewController id="CYv-86-pGt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CTy-BT-7IH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="YKR-N5-qdT"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="5tu-rd-2MJ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uxZ-Y1-fLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="mer-iG-J2E">
             <objects>
@@ -37,12 +20,39 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="CYv-86-pGt" kind="relationship" relationship="rootViewController" id="qE0-gN-BEl"/>
+                        <segue destination="DmH-3r-4UX" kind="relationship" relationship="rootViewController" id="UB3-gR-EQq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fvd-Yk-Ng2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="74" y="134"/>
         </scene>
+        <!--Спецпредложения-->
+        <scene sceneID="T9z-ef-Hgh">
+            <objects>
+                <tableViewController id="DmH-3r-4UX" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tig-pq-Ddr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="DmH-3r-4UX" id="JVp-2A-wp2"/>
+                            <outlet property="delegate" destination="DmH-3r-4UX" id="1QH-ra-gza"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="offersIcon" id="h0L-QQ-41p">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Спецпредложения" id="l3U-RJ-Gcg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6Z-SY-pTR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="134"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="offersIcon" width="90" height="90"/>
+    </resources>
 </document>

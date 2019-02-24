@@ -11,13 +11,15 @@ import UIKit
 class VacanciesTableViewController: UITableViewController {
     
     private struct DesignConstants{
-        static var cellHeight : CGFloat = 170
+        static var estimatedCellHeight : CGFloat = 129
     }
     private var vacancies = [Vacancy]()
     private var vacancyViewModel = VacancyViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.estimatedRowHeight = DesignConstants.estimatedCellHeight
+        tableView.rowHeight = UITableView.automaticDimension
         vacancyViewModel.delegate = self
         vacancyViewModel.fetchVacancies()
         tableView.register(VacancyTableViewCell.self)
@@ -40,10 +42,6 @@ class VacanciesTableViewController: UITableViewController {
         cell.dateTimeLabel.text = "21 сентября"
         cell.vacancyTitleLabel.text = vacancies[indexPath.row].title
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return DesignConstants.cellHeight
     }
 }
 

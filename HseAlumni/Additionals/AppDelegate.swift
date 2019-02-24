@@ -15,8 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        setNavigationAndTabBarApperance()
         //showFontsNames()
+        setNavigationAndTabBarApperance()
         return true
     }
     
@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = .mainBlue
         UINavigationBar.appearance().isTranslucent = false
         UIBarButtonItem.appearance().tintColor = .white
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font : UIFont(name: "Lato-Light", size: 18)!, NSAttributedString.Key.foregroundColor : UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font : UIFont(name: "Lato-Regular", size: 15)!, NSAttributedString.Key.foregroundColor : UIColor.white]
         UITabBar.appearance().backgroundColor = .mainBlue
         UITabBar.appearance().tintColor = .white
         UITabBar.appearance().isTranslucent = false

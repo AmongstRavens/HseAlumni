@@ -19,7 +19,6 @@ class RegistrationViewModel{
     }
     
     func isUserAuthorized() -> Bool{
-        //return UserDefaults.standard.value(forKey: "diplomaNumber") as? String != nil
-        return false
+        return UserDefaults.standard.value(forKey: "diplomaNumber") as? String != nil
     }
 }

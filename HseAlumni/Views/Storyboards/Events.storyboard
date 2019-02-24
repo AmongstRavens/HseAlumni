@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Мероприятия-->
         <scene sceneID="GnQ-Xt-uCC">
             <objects>
                 <viewController id="lVg-xY-jAG" sceneMemberID="viewController">
@@ -20,7 +20,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Nhi-Tg-dhj"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fju-od-ZgN"/>
+                    <tabBarItem key="tabBarItem" title="" image="eventsIcon" id="Met-Yg-ejh">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                        <color key="badgeColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Мероприятия" id="fju-od-ZgN"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vzl-lR-H0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,4 +50,7 @@
             <point key="canvasLocation" x="-314.39999999999998" y="-270.31484257871068"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="eventsIcon" width="70" height="70"/>
+    </resources>
 </document>
